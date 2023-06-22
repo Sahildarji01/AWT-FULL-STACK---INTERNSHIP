@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Document</title> 
+     <style> 
+         .container-img{ 
+             position: relative; 
+             width:300px; 
+         } 
+         .image{ 
+             display: block; 
+             width: 300px; 
+             height: 400px; 
+             text-align: center; 
+             transition: 1s; 
+  
+  
+         } 
+         .overlay{ 
+             position: absolute; 
+             top: 0; 
+             bottom:0; 
+             left:0; 
+             right: 0; 
+             opacity: 0.1; 
+             height: 100%; 
+             /* transform: translate(100px,100px); */ 
+             transition: 1s; 
+             text-align: center; 
+             background-color:rgb(214, 214, 214) ; 
+  
+         } 
+  
+         .container-img:hover .overlay{ 
+             opacity: 1; 
+             text-align: center; 
+         } 
+         .container-img:hover .image{ 
+             transform: rotate(360deg); 
+             text-align: center; 
+         } 
+         .text{ 
+             color: rgb(0, 0, 0); 
+             position: absolute; 
+             font-size: 20px; 
+             text-align: center; 
+             top: 50%; 
+             left: 50%; 
+             transform: translate(-50%,-50%); 
+         } 
+     </style> 
+ </head> 
+ <body> 
+     <h2>Image Overlay Effect</h2> 
+     <div class="container-img"> 
+         <img src="Image/pexels-gabriel-chamak-15997337.jpg" alt="Demo Image" class="image"> 
+         <div class="overlay"> 
+             <div class="text">Image Overlay Effect</div> 
+         </div> 
+     </div> 
+ </body> 
+ </html>
