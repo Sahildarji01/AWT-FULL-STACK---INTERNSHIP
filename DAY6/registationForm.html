@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <style>
+        .container{border-radius: 10px;}
+        .r1{
+            color: blue;
+            border: 2px solid black;
+            margin:20px;
+            background-color: rgb(247, 170, 170);
+            /* justify-content: center; */
+            /* align-items: center; */
+            padding: 30px 50px;  
+        }
+        .r2{
+            display: flex;
+        }
+        .r2 i{
+            padding: 6px 10px;
+            color: black;
+            background-color: gray;
+        }
+        .r2 select{
+            height: 26px; 
+            border :2px solid gray;
+            width: 100%;
+            outline: none;
+            font-size: 15px;
+        }
+        .r2 input{
+            height: 26px; 
+            border :2px solid gray;
+            width: 100%;
+            outline: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(152, 238, 238); ">
+    <h1 style="text-align: center;color: rgb(231, 55, 143)">Registeration Form</h1> 
+    <div class="container" style="height: fit-content; width: fit-content;">
+        <form>
+            <div class="r1">
+                <h1 style="text-align: center;"><i class="fa fa-users">&nbsp;<b>Create New Account</b></i></h1><hr>
+                <label for="fname">First Name</label><br>
+                <div class="r2">
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" name="fname" autofocus placeholder="Enter Your First Name here..." maxlength="10" style="height: 26px;border: 2px solid gray;"><br><br>                  
+                </div>
+                <label for="lname">Last Name</label><br>
+                <div class="r2">
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" name="lname" autofocus placeholder="Enter Your Last Name here..." maxlength="10" style="height: 26px;border: 2px solid gray;"><br><br>
+                </div>
+                <label for="email">E mail id:</label><br>
+                <div class="r2">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="text" name="email" autofocus placeholder="Enter Your Email-id here..." maxlength="10" style="height: 26px;border: 2px solid gray;"><br><br>
+                </div>
+                <label for="cno">Contact No.</label><br>
+                <div class="r2">
+                    <span><i class="fa fa-phone"></i></span>
+                    <input type="text" name="cno" autofocus placeholder="Enter Your Contact no. here..." maxlength="10" style="height: 26px;border: 2px solid gray;"><br><br>
+                </div>
+                <label for="G">Gender</label><br>
+                <div class="r2">
+                    <span><i class="fa fa-male"></i></span>
+                    <select type="text" name="G">
+                    <option value="">Select One...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+                </div>
+                <button type="submit" name="submit" style="background-color: blue;color: white"><i class="fa fa-user-plus"></i>&nbsp;Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
