@@ -1,6 +1,6 @@
 //typeof
 //Array Instance of
-var a = ["Dhruvraj", "Chauhan"];
+var a = ["sahil", "Darji"];
 
 document.write(a instanceof Array);
 
