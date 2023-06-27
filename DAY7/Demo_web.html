@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+      .carousel-inner{
+        height: 500px;
+      }
+
+    /* .item, img{
+      height: 100% !important;
+      width:  100% !important;
+      border: 1px solid red;
+    } */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" style="background-color: rgb(225, 251, 168);">
+        <a class="navbar-brand" href="#">
+          <nav class="navbar bg-body-tertiary" style="background-color: rgb(225, 251, 168);">
+            <div class="container">
+              <a class="navbar-brand" href="https://getbootstrap.com/" target="_blank">
+                <img src="Bootstrap_logo.svg.png" alt="Bootstrap" width="70" style="background-color: rgb(225, 251, 168);">
+              </a>
+            </div>
+          </nav>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Doc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Example
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://github.com/twbs/examples/tree/main/starter/" target="_blank">CDN Starter</a></li>
+                <li><a class="dropdown-item" href="https://github.com/twbs/examples/tree/main/react-nextjs/" target="_blank">React</a></li>
+                <li><a class="dropdown-item" href="https://themes.getbootstrap.com/" target="_blank">Browse Themes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="https://blog.getbootstrap.com/"><!--All post-->
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://blog.getbootstrap.com/" target="_blank">
+                        <img src="post.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        All Post
+                      </a>
+                    </div>
+                  </nav>
+                </a></li>
+                <li><a class="dropdown-item" href="https://blog.getbootstrap.com/archive/"><!--Archive-->
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://blog.getbootstrap.com/archive/" target="_blank">
+                        <img src="archive.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Archive
+                      </a>
+                    </div>
+                  </nav>
+                </a></li>
+                <li><a class="dropdown-item" href="https://blog.getbootstrap.com/videos/"><!--Video-->
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://blog.getbootstrap.com/videos/" target="_blank">
+                        <img src="videologo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Video
+                      </a>
+                    </div>
+                  </nav>
+                </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://silveroakuni.ac.in/#" target="_blank">Silver Oak University</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="i1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="i2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="i3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+</html>
