@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamic DOM manipulation</h1>
+    <h2>The getElementsBTagName()</h2>
+    <p>An unorfered list:</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Javascript</li>
+    </ul>
+    <p>The innerHTML of the third li element is:</p>
+    <p id="demo"></p>
+    <script>
+        const collection=document.getElementsByTagName("li");
+        document.getElementById("demo").innerHTML=collection[1].innerHTML;
+        // document.getElementById("demo").innerHTML=document.getElementsByTagName("li")[2].innerHTML;
+    </script>
+
+</body>
+</html>
