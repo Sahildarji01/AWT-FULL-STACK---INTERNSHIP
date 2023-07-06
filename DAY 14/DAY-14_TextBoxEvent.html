@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#TxtTestFocus").focus(function(){
+                $(this).css("background-color","red");
+            });
+            $("#TxtTestBlur").blur(function(){
+                $(this).css("background-color","yellow");
+            });
+        $("#TxtTestKeyPress").keypress(function(){
+                alert($(this).val());
+            });
+  
+        $("#TxtTestKeyUp").keyup(function(){
+            alert($(this).val());
+            });
+       });
+
+    </script>
+</head>
+<body>
+    <input type="text" id="TxtTestFocus" placeholder="Check the text box Focus event.."/><hr/>
+    <input type="text" id="TxtTestBlur" placeholder="Check the text box Blur event.."/><hr/>
+    <input type="text" id="TxtTestKeyPress" placeholder="Check the text box key press event.."/><hr/>
+    <input type="text" id="TxtTestKeyUp" placeholder="Check the text box key up event.."/><hr/>
+</body>
+</html>
