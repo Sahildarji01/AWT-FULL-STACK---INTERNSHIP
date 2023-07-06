@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+            color: aliceblue;
+            border: 1rem solid black;
+        }
+        .biggerbox{
+            height: 150px;
+            width: 500px;
+            background-color: brown;
+            color: aliceblue;
+            border: 1rem solid black;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#mydiv").draggable();
+
+            $("#myhomediv span").draggable({
+                containment:"#myhomediv"
+            });
+            $("#myhorizontaldiv span").draggable({
+                axis:"x"
+            });
+
+            $("#myvirticaldiv span").draggable({
+                axis:"y"
+            });
+             $("#mythreesecdelaydiv span").draggable({
+                delay:3000
+            });
+            $("#myfiftypixeldiv span").draggable({
+                distance:200
+            });
+        });
+    </script>
+</head>
+<body>
+        <div class="box" id="mydiv"><span>I can move everywhere</span></div><br><hr/>
+        <div class="box" id="myhomediv"><span>i can move in the box</span></div><br><hr/>
+        <div class="box" id="myhorizontaldiv"><span>Horizontal movements</span></div><br><hr/>
+        <div class="box" id="myvirticaldiv"><span>Vertical movements</span></div><br><hr/>
+        <div class="box" id="mythreesecdelaydiv"><span>Time Delay by 3 sec</span></div><br><hr/>
+        <div class="biggerbox" id="myfiftypixeldiv"><span>In the box</span> </div><br><hr/>
+</body>
+</html>
